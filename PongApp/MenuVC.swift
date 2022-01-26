@@ -18,7 +18,6 @@ enum gameType {
 
 class MenuVC : UIViewController {
     
-    
     @IBAction func Player2(_ sender: Any) {
         moveToGame(game: .player2)
     }
@@ -44,5 +43,11 @@ class MenuVC : UIViewController {
     @IBAction func exit(_ sender: Any) {
         let menue = self.storyboard?.instantiateViewController(withIdentifier: "menue") as! UIViewController
         self.navigationController?.pushViewController(menue, animated: true)
+    }
+    @IBAction func buttonTapped(_ sender: Any) {
+            let vc = UIViewController()
+            vc.modalPresentationStyle = .formSheet
+            vc.preferredContentSize = .init(width: 500, height: 800)
+            present(vc, animated: true)
     }
 }

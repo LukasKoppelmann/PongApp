@@ -22,28 +22,12 @@
 		AC982FFD1E2451B1008DF40E /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC982FFC1E2451B1008DF40E /* MenuVC.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AC02333E1DAD29F800FAFCE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC02331B1DAD29F700FAFCE9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC0233221DAD29F700FAFCE9;
-			remoteInfo = Pong2;
-		};
-		AC0233491DAD29F800FAFCE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC02331B1DAD29F700FAFCE9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC0233221DAD29F700FAFCE9;
-			remoteInfo = Pong2;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		937B765D27A1B0970054F2A9 /* point.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = point.wav; sourceTree = "<group>"; };
 		937B765F27A1B0A00054F2A9 /* hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hit.wav; sourceTree = "<group>"; };
 		937B766127A1B7420054F2A9 /* hitMetal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitMetal.wav; sourceTree = "<group>"; };
-		AC0233231DAD29F800FAFCE9 /* Pong2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		937B767527A1FC5C0054F2A9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0233231DAD29F800FAFCE9 /* PongApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PongApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0233261DAD29F800FAFCE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC0233281DAD29F800FAFCE9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		AC02332A1DAD29F800FAFCE9 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -52,29 +36,12 @@
 		AC0233311DAD29F800FAFCE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC0233331DAD29F800FAFCE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC0233361DAD29F800FAFCE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AC0233381DAD29F800FAFCE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC02333D1DAD29F800FAFCE9 /* Pong2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pong2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC0233481DAD29F800FAFCE9 /* Pong2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pong2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4197471DCA560100A2FDF1 /* LLPIXEL3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LLPIXEL3.ttf; sourceTree = "<group>"; };
 		AC982FFC1E2451B1008DF40E /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC0233201DAD29F700FAFCE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC02333A1DAD29F800FAFCE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC0233451DAD29F800FAFCE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -105,9 +72,7 @@
 		AC0233241DAD29F800FAFCE9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC0233231DAD29F800FAFCE9 /* Pong2.app */,
-				AC02333D1DAD29F800FAFCE9 /* Pong2Tests.xctest */,
-				AC0233481DAD29F800FAFCE9 /* Pong2UITests.xctest */,
+				AC0233231DAD29F800FAFCE9 /* PongApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,17 +81,17 @@
 			isa = PBXGroup;
 			children = (
 				AC4197471DCA560100A2FDF1 /* LLPIXEL3.ttf */,
-				AC0233261DAD29F800FAFCE9 /* AppDelegate.swift */,
 				AC0233281DAD29F800FAFCE9 /* GameScene.sks */,
 				AC02332A1DAD29F800FAFCE9 /* Actions.sks */,
+				AC0233351DAD29F800FAFCE9 /* LaunchScreen.storyboard */,
+				AC0233301DAD29F800FAFCE9 /* Main.storyboard */,
+				AC0233261DAD29F800FAFCE9 /* AppDelegate.swift */,
+				AC982FFC1E2451B1008DF40E /* MenuVC.swift */,
 				AC02332C1DAD29F800FAFCE9 /* GameScene.swift */,
 				AC02332E1DAD29F800FAFCE9 /* GameViewController.swift */,
-				AC0233301DAD29F800FAFCE9 /* Main.storyboard */,
-				AC982FFC1E2451B1008DF40E /* MenuVC.swift */,
-				937B765C27A1B0080054F2A9 /* sounds */,
 				AC0233331DAD29F800FAFCE9 /* Assets.xcassets */,
-				AC0233351DAD29F800FAFCE9 /* LaunchScreen.storyboard */,
-				AC0233381DAD29F800FAFCE9 /* Info.plist */,
+				937B767527A1FC5C0054F2A9 /* Info.plist */,
+				937B765C27A1B0080054F2A9 /* sounds */,
 			);
 			path = PongApp;
 			sourceTree = "<group>";
@@ -134,9 +99,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC0233221DAD29F700FAFCE9 /* Pong2 */ = {
+		AC0233221DAD29F700FAFCE9 /* PongApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC0233511DAD29F800FAFCE9 /* Build configuration list for PBXNativeTarget "Pong2" */;
+			buildConfigurationList = AC0233511DAD29F800FAFCE9 /* Build configuration list for PBXNativeTarget "PongApp" */;
 			buildPhases = (
 				AC02331F1DAD29F700FAFCE9 /* Sources */,
 				AC0233201DAD29F700FAFCE9 /* Frameworks */,
@@ -146,46 +111,10 @@
 			);
 			dependencies = (
 			);
-			name = Pong2;
+			name = PongApp;
 			productName = Pong2;
-			productReference = AC0233231DAD29F800FAFCE9 /* Pong2.app */;
+			productReference = AC0233231DAD29F800FAFCE9 /* PongApp.app */;
 			productType = "com.apple.product-type.application";
-		};
-		AC02333C1DAD29F800FAFCE9 /* Pong2Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC0233541DAD29F800FAFCE9 /* Build configuration list for PBXNativeTarget "Pong2Tests" */;
-			buildPhases = (
-				AC0233391DAD29F800FAFCE9 /* Sources */,
-				AC02333A1DAD29F800FAFCE9 /* Frameworks */,
-				AC02333B1DAD29F800FAFCE9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AC02333F1DAD29F800FAFCE9 /* PBXTargetDependency */,
-			);
-			name = Pong2Tests;
-			productName = Pong2Tests;
-			productReference = AC02333D1DAD29F800FAFCE9 /* Pong2Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		AC0233471DAD29F800FAFCE9 /* Pong2UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC0233571DAD29F800FAFCE9 /* Build configuration list for PBXNativeTarget "Pong2UITests" */;
-			buildPhases = (
-				AC0233441DAD29F800FAFCE9 /* Sources */,
-				AC0233451DAD29F800FAFCE9 /* Frameworks */,
-				AC0233461DAD29F800FAFCE9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AC02334A1DAD29F800FAFCE9 /* PBXTargetDependency */,
-			);
-			name = Pong2UITests;
-			productName = Pong2UITests;
-			productReference = AC0233481DAD29F800FAFCE9 /* Pong2UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -201,18 +130,6 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = LX55UB5PB7;
 						ProvisioningStyle = Automatic;
-					};
-					AC02333C1DAD29F800FAFCE9 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = G4K3J435AS;
-						ProvisioningStyle = Automatic;
-						TestTargetID = AC0233221DAD29F700FAFCE9;
-					};
-					AC0233471DAD29F800FAFCE9 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = G4K3J435AS;
-						ProvisioningStyle = Automatic;
-						TestTargetID = AC0233221DAD29F700FAFCE9;
 					};
 				};
 			};
@@ -230,9 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC0233221DAD29F700FAFCE9 /* Pong2 */,
-				AC02333C1DAD29F800FAFCE9 /* Pong2Tests */,
-				AC0233471DAD29F800FAFCE9 /* Pong2UITests */,
+				AC0233221DAD29F700FAFCE9 /* PongApp */,
 			);
 		};
 /* End PBXProject section */
@@ -254,20 +169,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC02333B1DAD29F800FAFCE9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC0233461DAD29F800FAFCE9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -282,34 +183,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC0233391DAD29F800FAFCE9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC0233441DAD29F800FAFCE9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AC02333F1DAD29F800FAFCE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC0233221DAD29F700FAFCE9 /* Pong2 */;
-			targetProxy = AC02333E1DAD29F800FAFCE9 /* PBXContainerItemProxy */;
-		};
-		AC02334A1DAD29F800FAFCE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC0233221DAD29F700FAFCE9 /* Pong2 */;
-			targetProxy = AC0233491DAD29F800FAFCE9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AC0233301DAD29F800FAFCE9 /* Main.storyboard */ = {
@@ -372,13 +246,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -417,11 +291,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -429,13 +303,13 @@
 		AC0233521DAD29F800FAFCE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = LX55UB5PB7;
-				INFOPLIST_FILE = Pong2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PongApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.koppelmann.lukas.pong;
+				MARKETING_VERSION = 1.16;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koppelmann.lukas.pongapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -445,74 +319,16 @@
 		AC0233531DAD29F800FAFCE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = LX55UB5PB7;
-				INFOPLIST_FILE = Pong2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PongApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.koppelmann.lukas.pong;
+				MARKETING_VERSION = 1.16;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koppelmann.lukas.pongapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		AC0233551DAD29F800FAFCE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = G4K3J435AS;
-				INFOPLIST_FILE = Pong2Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Archetapp.Pong2Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pong2.app/Pong2";
-			};
-			name = Debug;
-		};
-		AC0233561DAD29F800FAFCE9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = G4K3J435AS;
-				INFOPLIST_FILE = Pong2Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Archetapp.Pong2Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pong2.app/Pong2";
-			};
-			name = Release;
-		};
-		AC0233581DAD29F800FAFCE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = G4K3J435AS;
-				INFOPLIST_FILE = Pong2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Archetapp.Pong2UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Pong2;
-			};
-			name = Debug;
-		};
-		AC0233591DAD29F800FAFCE9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = G4K3J435AS;
-				INFOPLIST_FILE = Pong2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Archetapp.Pong2UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Pong2;
 			};
 			name = Release;
 		};
@@ -528,29 +344,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC0233511DAD29F800FAFCE9 /* Build configuration list for PBXNativeTarget "Pong2" */ = {
+		AC0233511DAD29F800FAFCE9 /* Build configuration list for PBXNativeTarget "PongApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC0233521DAD29F800FAFCE9 /* Debug */,
 				AC0233531DAD29F800FAFCE9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AC0233541DAD29F800FAFCE9 /* Build configuration list for PBXNativeTarget "Pong2Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC0233551DAD29F800FAFCE9 /* Debug */,
-				AC0233561DAD29F800FAFCE9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AC0233571DAD29F800FAFCE9 /* Build configuration list for PBXNativeTarget "Pong2UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC0233581DAD29F800FAFCE9 /* Debug */,
-				AC0233591DAD29F800FAFCE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
