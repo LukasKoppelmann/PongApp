@@ -139,7 +139,7 @@
         <!--Settings-->
         <scene sceneID="oGo-R9-fac">
             <objects>
-                <viewController id="heF-5r-Idt" sceneMemberID="viewController">
+                <viewController id="heF-5r-Idt" customClass="Settings" customModule="PongApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gwm-vR-r9b"/>
                         <viewControllerLayoutGuide type="bottom" id="b9x-HD-i6f"/>
@@ -147,9 +147,28 @@
                     <view key="view" contentMode="scaleToFill" id="uR7-xI-3ps">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8z-CG-0aN">
+                                <rect key="frame" x="121" y="183" width="120" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XVa-XV-wHq">
+                                <rect key="frame" x="260" y="192" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="soundSwitch:" destination="heF-5r-Idt" eventType="valueChanged" id="aJR-Wc-WET"/>
+                                </connections>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="VEY-Ky-B66"/>
+                    <connections>
+                        <outlet property="soundSwitcher" destination="XVa-XV-wHq" id="KbG-cj-Aen"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNe-pZ-fiX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
