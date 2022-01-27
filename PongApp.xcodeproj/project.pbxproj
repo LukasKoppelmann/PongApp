@@ -11,6 +11,7 @@
 		937B766027A1B0A00054F2A9 /* hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 937B765F27A1B0A00054F2A9 /* hit.wav */; };
 		937B766227A1B7420054F2A9 /* hitMetal.wav in Resources */ = {isa = PBXBuildFile; fileRef = 937B766127A1B7420054F2A9 /* hitMetal.wav */; };
 		937B767827A212390054F2A9 /* ViewControllerLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937B767727A212390054F2A9 /* ViewControllerLoading.swift */; };
+		937B767C27A21A550054F2A9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937B767B27A21A540054F2A9 /* Settings.swift */; };
 		AC0233271DAD29F800FAFCE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0233261DAD29F800FAFCE9 /* AppDelegate.swift */; };
 		AC0233291DAD29F800FAFCE9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AC0233281DAD29F800FAFCE9 /* GameScene.sks */; };
 		AC02332B1DAD29F800FAFCE9 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = AC02332A1DAD29F800FAFCE9 /* Actions.sks */; };
@@ -29,6 +30,7 @@
 		937B766127A1B7420054F2A9 /* hitMetal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitMetal.wav; sourceTree = "<group>"; };
 		937B767527A1FC5C0054F2A9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		937B767727A212390054F2A9 /* ViewControllerLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLoading.swift; sourceTree = "<group>"; };
+		937B767B27A21A540054F2A9 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		AC0233231DAD29F800FAFCE9 /* PongApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PongApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0233261DAD29F800FAFCE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC0233281DAD29F800FAFCE9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -87,9 +89,10 @@
 				AC02332A1DAD29F800FAFCE9 /* Actions.sks */,
 				AC0233351DAD29F800FAFCE9 /* LaunchScreen.storyboard */,
 				AC0233301DAD29F800FAFCE9 /* Main.storyboard */,
-				AC0233261DAD29F800FAFCE9 /* AppDelegate.swift */,
 				937B767727A212390054F2A9 /* ViewControllerLoading.swift */,
 				AC982FFC1E2451B1008DF40E /* MenuVC.swift */,
+				937B767B27A21A540054F2A9 /* Settings.swift */,
+				AC0233261DAD29F800FAFCE9 /* AppDelegate.swift */,
 				AC02332C1DAD29F800FAFCE9 /* GameScene.swift */,
 				AC02332E1DAD29F800FAFCE9 /* GameViewController.swift */,
 				AC0233331DAD29F800FAFCE9 /* Assets.xcassets */,
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937B767C27A21A550054F2A9 /* Settings.swift in Sources */,
 				AC02332D1DAD29F800FAFCE9 /* GameScene.swift in Sources */,
 				AC982FFD1E2451B1008DF40E /* MenuVC.swift in Sources */,
 				937B767827A212390054F2A9 /* ViewControllerLoading.swift in Sources */,
@@ -307,12 +311,12 @@
 		AC0233521DAD29F800FAFCE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = LX55UB5PB7;
 				INFOPLIST_FILE = "$(SRCROOT)/PongApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.17;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.koppelmann.lukas.pongapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -323,12 +327,12 @@
 		AC0233531DAD29F800FAFCE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = LX55UB5PB7;
 				INFOPLIST_FILE = "$(SRCROOT)/PongApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.17;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.koppelmann.lukas.pongapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

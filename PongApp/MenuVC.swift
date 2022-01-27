@@ -17,6 +17,11 @@ enum gameType {
 }
 
 class MenuVC : UIViewController {
+    //var
+    var sound = 1
+    var Settings: Settings?
+    
+    //----
     override func viewDidLoad() {
         super.viewDidLoad()
         version.text = "PongApp v." + getVersion()
@@ -37,6 +42,19 @@ class MenuVC : UIViewController {
     @IBAction func Hard(_ sender: Any) {
         moveToGame(game: .hard)
     }
+    @IBAction func settingsPr(_ sender: Any) {
+        let story = UIStoryboard(name: "Main", bundle: nil)
+        let controller = story.instantiateViewController(withIdentifier: "settingScreen")as! Settings
+        self.present(controller, animated: true, completion: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showSettings"{
+            let dest = segue.destination as! Settings
+            dest.soundSetting = 0
+            dest.menuVC = self
+        }
+    }
+    
     func getVersion() -> String {
         let dictionary = Bundle.main.infoDictionary!
         let version = dictionary["CFBundleShortVersionString"] as! String
@@ -46,19 +64,7 @@ class MenuVC : UIViewController {
     
     func moveToGame(game : gameType) {
         let gameVC = self.storyboard?.instantiateViewController(withIdentifier: "gameVC") as! GameViewController
-        
         currentGameType = game
-
         self.navigationController?.pushViewController(gameVC, animated: true)
-    }
-    @IBAction func exit(_ sender: Any) {
-        let menue = self.storyboard?.instantiateViewController(withIdentifier: "menue") as! UIViewController
-        self.navigationController?.pushViewController(menue, animated: true)
-    }
-    @IBAction func buttonTapped(_ sender: Any) {
-            let vc = UIViewController()
-            vc.modalPresentationStyle = .formSheet
-            vc.preferredContentSize = .init(width: 500, height: 800)
-            present(vc, animated: true)
     }
 }
