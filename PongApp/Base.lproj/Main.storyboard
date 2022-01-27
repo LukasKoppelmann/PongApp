@@ -121,7 +121,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="heF-5r-Idt" kind="show" id="R08-Zb-GSe"/>
+                                    <action selector="settingsPr:" destination="j5z-9e-ade" eventType="touchUpInside" id="fXO-Ua-gmA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -130,6 +130,7 @@
                     <navigationItem key="navigationItem" id="nDl-Wn-v9A"/>
                     <connections>
                         <outlet property="version" destination="CSL-PW-xFj" id="0a2-hE-UfG"/>
+                        <segue destination="heF-5r-Idt" kind="presentation" identifier="showSettings" modalPresentationStyle="fullScreen" id="RSy-Ly-RhA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ghw-mJ-T5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -139,7 +140,7 @@
         <!--Settings-->
         <scene sceneID="oGo-R9-fac">
             <objects>
-                <viewController id="heF-5r-Idt" customClass="Settings" customModule="PongApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settingScreen" id="heF-5r-Idt" customClass="Settings" customModule="PongApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gwm-vR-r9b"/>
                         <viewControllerLayoutGuide type="bottom" id="b9x-HD-i6f"/>
@@ -159,20 +160,30 @@
                                 <rect key="frame" x="260" y="192" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="soundSwitch:" destination="heF-5r-Idt" eventType="valueChanged" id="aJR-Wc-WET"/>
+                                    <action selector="soundSwitch:" destination="heF-5r-Idt" eventType="valueChanged" id="W5g-Y2-hNr"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brj-8A-db6">
+                                <rect key="frame" x="187" y="530" width="56" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                <connections>
+                                    <action selector="savePr:" destination="heF-5r-Idt" eventType="touchUpInside" id="ZcT-5n-FiZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="VEY-Ky-B66"/>
                     <connections>
                         <outlet property="soundSwitcher" destination="XVa-XV-wHq" id="KbG-cj-Aen"/>
+                        <segue destination="j5z-9e-ade" kind="presentation" identifier="backToMenu" modalPresentationStyle="fullScreen" id="OJk-HL-xxP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNe-pZ-fiX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-34" y="41"/>
+            <point key="canvasLocation" x="-35.046728971962615" y="40.820734341252702"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -246,7 +257,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Weiter"/>
                                 <connections>
-                                    <segue destination="2TM-21-6nP" kind="show" id="kmO-qF-wzK"/>
+                                    <segue destination="2TM-21-6nP" kind="presentation" modalPresentationStyle="fullScreen" id="cTu-bx-ZzR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -261,6 +272,9 @@
             <point key="canvasLocation" x="-2439" y="41"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="OJk-HL-xxP"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="menue" width="1280" height="1280"/>
         <image name="sky-gradient-mid-afternoon-looking-north" width="1704" height="2272"/>

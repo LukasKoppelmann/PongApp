@@ -17,6 +17,11 @@ enum gameType {
 }
 
 class MenuVC : UIViewController {
+    //var
+    var sound = 1
+    var Settings: Settings?
+    
+    //----
     override func viewDidLoad() {
         super.viewDidLoad()
         version.text = "PongApp v." + getVersion()
@@ -37,6 +42,20 @@ class MenuVC : UIViewController {
     @IBAction func Hard(_ sender: Any) {
         moveToGame(game: .hard)
     }
+    @IBAction func settingsPr(_ sender: Any) {
+        let story = UIStoryboard(name: "Main", bundle: nil)
+        let controller = story.instantiateViewController(withIdentifier: "settingScreen")as! Settings
+        self.present(controller, animated: true, completion: nil)
+       // performSegue(withIdentifier: "showSettings", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showSettings"{
+            let dest = segue.destination as! Settings
+            dest.soundSetting = 0
+            dest.menuVC = self
+        }
+    }
+    
     func getVersion() -> String {
         let dictionary = Bundle.main.infoDictionary!
         let version = dictionary["CFBundleShortVersionString"] as! String
