@@ -17,6 +17,11 @@ enum gameType {
 }
 
 class MenuVC : UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        version.text = "PongApp v." + getVersion()
+    }
+    @IBOutlet weak var version: UILabel!
     
     @IBAction func Player2(_ sender: Any) {
         moveToGame(game: .player2)
@@ -31,6 +36,12 @@ class MenuVC : UIViewController {
     }
     @IBAction func Hard(_ sender: Any) {
         moveToGame(game: .hard)
+    }
+    func getVersion() -> String {
+        let dictionary = Bundle.main.infoDictionary!
+        let version = dictionary["CFBundleShortVersionString"] as! String
+        let build = dictionary["CFBundleVersion"] as! String
+        return "\(version) build \(build)"
     }
     
     func moveToGame(game : gameType) {
