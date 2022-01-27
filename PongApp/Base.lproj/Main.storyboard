@@ -10,7 +10,6 @@
         <!--Navigation Controller-->
         <scene sceneID="4jQ-yo-IuW">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h6L-P0-ccQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController modalPresentationStyle="fullScreen" interfaceStyle="dark" id="2TM-21-6nP" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="HAG-Ya-EZf"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ox7-Dl-AzO">
@@ -21,6 +20,7 @@
                         <segue destination="j5z-9e-ade" kind="relationship" relationship="rootViewController" id="zfm-iy-Ekl"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6L-P0-ccQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1696" y="41"/>
         </scene>
@@ -163,15 +163,14 @@
                                     <action selector="soundSwitch:" destination="heF-5r-Idt" eventType="valueChanged" id="W5g-Y2-hNr"/>
                                 </connections>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brj-8A-db6">
-                                <rect key="frame" x="187" y="530" width="56" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIy-vk-Ife">
+                                <rect key="frame" x="20" y="68" width="388" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Save"/>
-                                <connections>
-                                    <action selector="savePr:" destination="heF-5r-Idt" eventType="touchUpInside" id="ZcT-5n-FiZ"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>

@@ -46,7 +46,6 @@ class MenuVC : UIViewController {
         let story = UIStoryboard(name: "Main", bundle: nil)
         let controller = story.instantiateViewController(withIdentifier: "settingScreen")as! Settings
         self.present(controller, animated: true, completion: nil)
-       // performSegue(withIdentifier: "showSettings", sender: nil)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showSettings"{
@@ -65,19 +64,7 @@ class MenuVC : UIViewController {
     
     func moveToGame(game : gameType) {
         let gameVC = self.storyboard?.instantiateViewController(withIdentifier: "gameVC") as! GameViewController
-        
         currentGameType = game
-
         self.navigationController?.pushViewController(gameVC, animated: true)
-    }
-    @IBAction func exit(_ sender: Any) {
-        let menue = self.storyboard?.instantiateViewController(withIdentifier: "menue") as! UIViewController
-        self.navigationController?.pushViewController(menue, animated: true)
-    }
-    @IBAction func buttonTapped(_ sender: Any) {
-            let vc = UIViewController()
-            vc.modalPresentationStyle = .formSheet
-            vc.preferredContentSize = .init(width: 500, height: 800)
-            present(vc, animated: true)
     }
 }

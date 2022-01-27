@@ -29,8 +29,10 @@ class Settings: UIViewController {
     @IBAction func soundSwitch(_ sender: Any) {
         if soundSwitcher.isOn{
             soundSetting = 1;
+            saveInt(nameSafe: soundSetting, desName: "soundOn")
         }else{
             soundSetting = 0;
+            saveInt(nameSafe: soundSetting, desName: "soundOn")
         }
         print(soundSetting);
     }
@@ -40,15 +42,6 @@ class Settings: UIViewController {
             dest.sound = soundSetting
             dest.Settings = self
         }
-    }
-    @IBAction func savePr(_ sender: Any) {
-        if soundSwitcher.isOn{
-            soundSetting = 1;
-        }else{
-            soundSetting = 0;
-        }
-        performSegue(withIdentifier: "backToMenu", sender: nil)
-        saveInt(nameSafe: soundSetting, desName: "soundOn")
     }
     //load values
     func  loadInt(desName: String) -> Int{
@@ -67,16 +60,4 @@ class Settings: UIViewController {
         defaults.set(saveValue, forKey: desName)
         print("Saved '\(saveValue)'")
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

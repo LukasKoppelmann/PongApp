@@ -156,6 +156,7 @@ class GameScene: SKScene {
         
         //-------------------------
         func soundBump(){
+            if (loadInt(desName: "soundOn") != 0){
             let pathToSound = Bundle.main.path(forResource: "hitMetal", ofType: "wav")!
             let url = URL(fileURLWithPath: pathToSound)
             do{
@@ -164,10 +165,15 @@ class GameScene: SKScene {
             }
             catch{
                 // error handling
+                }
+            }
+            else{
+                //nothing
             }
         }
         
         func soundGoal(){
+            if (loadInt(desName: "soundOn") != 0){
             let pathToSound = Bundle.main.path(forResource: "point", ofType: "wav")!
             let url = URL(fileURLWithPath: pathToSound)
             do{
@@ -176,8 +182,20 @@ class GameScene: SKScene {
             }
             catch{
                 // error handling
+                }
+            }
+            else{
+                //nothing
             }
         }
+    }
+    func  loadInt(desName: String) -> Int{
+        let defaults = UserDefaults.standard
+        if let savedValue = defaults.object(forKey: desName) as? Int{
+            print("Loaded '\(savedValue)'")
+            return savedValue
+        }
+        return 1
     }
 }
 
