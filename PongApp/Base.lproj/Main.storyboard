@@ -22,7 +22,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-2271" y="41"/>
+            <point key="canvasLocation" x="-1696" y="41"/>
         </scene>
         <!--MenuVC-->
         <scene sceneID="Wdm-03-u3g">
@@ -85,6 +85,19 @@
                                     <action selector="Hard:" destination="j5z-9e-ade" eventType="touchUpInside" id="gUh-GS-KC5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4W-1l-rvt">
+                                <rect key="frame" x="89" y="659" width="250" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="2 Player"/>
+                                <buttonConfiguration key="configuration" style="filled" title="2 Player" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Player2:" destination="j5z-9e-ade" eventType="touchUpInside" id="3md-wb-VzF"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PongApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GG8-8T-Urd">
                                 <rect key="frame" x="20" y="140" width="388" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -100,17 +113,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4W-1l-rvt">
-                                <rect key="frame" x="89" y="659" width="250" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kG2-13-zxc">
+                                <rect key="frame" x="89" y="745" width="250" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPurpleColor"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="2 Player"/>
-                                <buttonConfiguration key="configuration" style="filled" title="2 Player" cornerStyle="large">
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Settings" cornerStyle="large">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="Player2:" destination="j5z-9e-ade" eventType="touchUpInside" id="3md-wb-VzF"/>
+                                    <segue destination="heF-5r-Idt" kind="show" id="R08-Zb-GSe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -124,6 +135,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ghw-mJ-T5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-954.6728971962616" y="40.820734341252702"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="oGo-R9-fac">
+            <objects>
+                <viewController id="heF-5r-Idt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gwm-vR-r9b"/>
+                        <viewControllerLayoutGuide type="bottom" id="b9x-HD-i6f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uR7-xI-3ps">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="VEY-Ky-B66"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNe-pZ-fiX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-34" y="41"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -141,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-954" y="695"/>
+            <point key="canvasLocation" x="-2439" y="705"/>
         </scene>
         <!--View Controller Loading-->
         <scene sceneID="9F1-B3-f3R">
@@ -209,12 +239,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y52-NE-mtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2271.0280373831774" y="694.60043196544279"/>
+            <point key="canvasLocation" x="-2439" y="41"/>
         </scene>
     </scenes>
     <resources>
         <image name="menue" width="1280" height="1280"/>
         <image name="sky-gradient-mid-afternoon-looking-north" width="1704" height="2272"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
